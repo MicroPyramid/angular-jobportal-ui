@@ -1,0 +1,17 @@
+.main-cnt {
+    margin-left: 180px;
+    overflow: hidden;
+    width:1100px;
+}
+
+.pj-body{
+    background-color: lightgray;
+    height:100%;
+    padding-top:50px;
+}
+
+.hdr {
+    position: fixed;
+    z-index: 10;
+    border-bottom: 1px solid #F5A134;
+}

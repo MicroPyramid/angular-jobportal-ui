@@ -1,0 +1,69 @@
+<div class="container-fluid">
+  <div class="main">
+    <div class="tab">
+      <a routerLink="/recruiter/job-list"><span class="tab_button active">
+          Open Tickets
+        </span></a>
+      <a href="/recruiter/job/inactive-list/"><span class="tab_button ">
+          Closed Tickets
+        </span></a>
+      <a routerLink="/raise-ticket"><span class="tab_button raise_ticket_button">
+          <i class="fa fa-ticket"></i>Raise a ticket
+        </span></a>
+    </div>
+    <div class="card">
+      <div class="wrapper">
+        <div class="card_block">
+          <div class="content">
+            <div class="heading">
+              test 2
+            </div>
+            <div class="detail_each">
+              <i class="fa fa-user"></i>
+              <span class="name">praveen@micropyramid.com</span>
+            </div>
+            <div class="detail_each">
+              <i class="fa fa-calendar"></i>
+              <span class="name">Sept. 9, 2020, 11:40 a.m.</span>
+            </div>
+            <div class="detail_each" style="margin-top: 20px">
+              <label>Type :</label>
+              <span class="name">Other</span>
+            </div>
+            <div class="detail_each">
+              <label>Status :</label>
+              <span class="name">Open</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a routerLink="/tickets/ticket/view/156/">
+              <span class="action_each view">
+                <i class="fa fa-eye"></i>
+                <span class="name">View</span>
+              </span>
+            </a>
+            <a routerLink="/tickets/ticket/edit/156/">
+              <span class="action_each edit">
+                <i class="fa fa-pencil-square-o"></i>
+                <span class="name">Edit</span>
+              </span>
+            </a>
+            <a href="#" id="156" class="status">
+              <span class="action_each status_close" id="Closed">
+                <i class="fa fa-times"></i>
+                <span class="name">Close</span>
+              </span>
+            </a>
+            <a href="#" class="ticket-close" id="156">
+              <span class="action_each delete">
+                <i class="fa fa-trash"></i>
+                <span class="name">Delete</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

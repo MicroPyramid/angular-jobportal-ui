@@ -1,0 +1,119 @@
+.container-fluid {
+    padding-left:30px;
+    padding-top:5px;
+}
+
+h3 {
+    color: #337ab7;
+}
+
+h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #f4f4f4;
+    color: #dc4e41;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 600;
+    padding-left: 5px;
+    color: #0B86C6;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.profile-details {
+    padding: 10px;
+    background: white;
+}
+
+.img {
+    float: left;
+    border: 1px solid #eee;
+    height: 180px;
+    width: 170px;
+}
+
+.details {
+    padding: 15px;
+    background: white;
+    margin-right: 70px;
+}
+
+.detail_each {
+    padding: 5px 10px;
+}
+
+.value {
+    margin-left: 10px
+}
+
+.name {
+    text-align: center;
+    color: brown;
+    font-weight: 700;
+    font-size: 19px;
+    display: block;
+    padding: 5px;
+}
+.email {
+    margin: 15px;
+    text-align: center;
+}
+
+.btn {
+    float: right;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card {
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    min-height: 70px;
+}
+
+.jobs_posted {
+    position: relative;
+    padding: 10px;
+    width: 30%
+}
+
+i {
+    position: absolute;
+    opacity: 0.2;
+    color: #fff;
+    font-size: 40px;
+    right: 0px;
+    bottom: -2px;
+}
+
+.heading {
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0px;
+}
+
+.count {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+.statistics {
+    display: flex;
+    justify-content: space-between; 
+    margin: 10px;
+}
+
+.fileInput {
+    width: 62%;
+    margin-left: 5px;
+}

@@ -1,0 +1,27 @@
+.container-fluid {
+    padding-left:30px;
+    padding-top:5px;
+}
+
+h3 {
+    color: #337ab7;
+}
+
+h2 {
+    text-align: center;
+}
+
+.message_panel {
+    background: #fff;
+    padding: 0px;
+    border: none;
+    border-radius: 0;
+
+}
+
+.empty_msg {
+    padding: 15%;    
+}
+
+
+

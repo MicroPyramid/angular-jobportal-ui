@@ -1,0 +1,42 @@
+.container-fluid {
+    padding-left:30px;
+    padding-top:5px;
+}
+
+h3 {
+    color: #F5A134;
+    font-weight: 600;
+}
+
+h4 {
+    background: white;
+    border-bottom: 1px solid #eee;
+    margin-top: 1px;
+    padding: 15px 0px 5px 0px;
+    font-weight: 600;
+    color: #337ab7;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    margin-left:20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+}
+
+.m-l-20 {
+    margin-left: 20px
+}
+
+.radiobtn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cb ,.cbl {
+    margin-left:15px;
+}

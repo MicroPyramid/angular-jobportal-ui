@@ -1,0 +1,81 @@
+.container-fluid {
+    padding-left:30px;
+    padding-top:5px;
+}
+
+h3 {
+    color: #337ab7;
+}
+
+.card {
+    background: white;
+}
+
+.edit_button {    
+    padding: 5px;
+    float: right;
+    color: white;
+    background: #63C076;
+}
+
+.profile {
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    border: 1px solid #eee;
+    position: relative;
+    cursor: pointer;
+}
+
+.tab {
+    padding: 5px;
+    margin: 5px;    
+    color: white;
+    background: #63C076;
+    text-align: center;
+}
+
+.block {
+    margin: 5px;
+    padding: 5px;
+}
+
+.name strong {
+    color: #337ab7;    
+}
+
+.logobtn {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+img {
+    float: left;
+    border: 1px solid #eee;
+    height: 150px;
+    width: 150px;
+}
+
+.menu_block {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.alert {
+    margin: 15px;
+    text-align: center;
+}
+
+h5 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #337ab7;
+    margin-top: 25px;
+}

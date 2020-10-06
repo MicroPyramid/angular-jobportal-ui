@@ -1,0 +1,19 @@
+<div class="pj">
+  <div class="app" *ngIf="auth.isAuthenticated() === 'true'">
+    <div class="hdr">
+      <app-header></app-header>
+    </div>
+    <div class="pj-body">
+      <div class="sidebar">
+        <app-sidebar></app-sidebar>
+      </div>
+      <div class="main-cnt">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+
+  <div class="app" *ngIf="!auth.isAuthenticated()">
+    <app-login></app-login>
+  </div>
+</div>

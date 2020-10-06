@@ -1,0 +1,354 @@
+<div class="container-fluid">
+  <div class="main">
+    <div class="tab">
+      <a href=""><span class="tab_button active">FULL-TIME</span></a>
+      <a href=""><span class="tab_button">INTERNSHIP</span></a>
+      <a href=""><span class="tab_button">WALK-IN</span></a>
+    </div>
+    <div class="job_text col-md-12">
+      <h3>Post a Job</h3>
+      <p>Peeljobs is offering unlimited job posting and for the unlimited time period<br>
+        Your post will be on live within one hour and you will get a notification mail if any job seeker applied for
+        your job</p>
+    </div>
+    <div class="pannel col-md-9">
+      <div class="pannel-body">
+        <div class="text-center">
+          <a><span class="btn" id="active">Active jobs</span></a>
+          <a><span class="btn" id="inactive">Inactive jobs</span></a>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <label class="copy-text col-md-3">Copy from an existing job</label>
+          <div class="copy-select col-md-8">
+            <select class="input" name="jobpost" id="jobpost">
+              <option id="empty" value="">Select From Active Jobs To Autofill</option>
+              <option value="20599" id="active">Front End App Developer</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <form class="job-form" name="jobForm">
+        <div class="form-area">
+          <h4 class="heading">Job Details</h4>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Job Title</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="title" placeholder="Job Title" required>
+              <small id="help" class="form-text text-muted">
+                Be specific with your Job Title.
+                <strong data-toggle="modal" data-target=#title (click)="showModal('titleFlag')"
+                  style="cursor: pointer; color:#63C076">View
+                  Instructions</strong>
+              </small>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Job Role</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="role" placeholder="Job Role">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Number of Vacancies</label>
+            <div class="col-md-9">
+              <input type="number" class="form-control" id="vacancies" placeholder="Number of Vacancies">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Job Location</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="location" placeholder="Job Location">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Pin Code</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="pin" placeholder="Pin Code">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Key Words</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="keywords" placeholder="Key Words">
+              <small id="help" class="form-text text-muted">
+                Add if any certifications/special skills are required. View samples
+                <strong data-toggle="modal" data-target=#keywords (click)="showModal('keywordsFlag')"
+                  style="cursor: pointer; color:#63C076">Here</strong>
+              </small>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Industry</label>
+            <div class="col-md-9">
+              <select class="form-control">
+                <option>Default select</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Functional Area</label>
+            <div class="col-md-9">
+              <select class="form-control">
+                <option>Default select</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Job Description</label>
+            <div class="col-md-9">
+              <textarea class="form-control" type="text" id="desc" rows="4" cols="50"></textarea>
+            </div>
+          </div>
+
+          <h4 class="heading">Eligibility Details</h4>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Experience</label>
+            <div class="col-md-9">
+              <select class="yr" placeholder="Min Year"></select>
+              <select class="yr" placeholder="Min Month"></select>
+              <select class="yr" placeholder="Max Year"></select>
+              <select class="yr" placeholder="Max Month"></select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Educational Qualification</label>
+            <div class="col-md-9">
+              <select class="form-control">
+                <option>Default select</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Technical Skills</label>
+            <div class="col-md-9">
+              <select class="form-control">
+                <option>Default select</option>
+              </select>
+            </div>
+          </div>
+
+          <h4 class="heading">Company Details</h4>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Company Name</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="company" placeholder="Company Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Company Website</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="web" placeholder="Company Website">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Company Logo</label>
+            <div class="col-md-9">
+              <input type="file" class="form-control" id="logo" placeholder="Company Logo">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Company Address</label>
+            <div class="col-md-9">
+              <textarea class="form-control" type="text" id="address" rows="4" cols="50"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Company Description</label>
+            <div class="col-md-9">
+              <textarea class="form-control" type="text" id="desc" rows="4" cols="50"></textarea>
+              <div class="form-check">
+                <input class="form-check-input cb" type="checkbox" id="mailnotification" checked>
+                <label class="form-check-label cbl">
+                  Send A Notification Email if any job seeker applied for the job
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="heading">Iterview Location</h4>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Venue Details</label>
+            <div class="col-md-9">
+              <textarea class="form-control" type="text" id="venue" rows="4" cols="50"></textarea>
+            </div>
+          </div>
+
+          <h4 class="heading">Offering Details</h4>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Annual Salary</label>
+            <div class="col-md-9">
+              <select class="sal" name="jobpost" id="jobpost"></select>
+              <input type="text" class="sal" id="logo" placeholder="Minimum Salary">
+              <input type="text" class="sal" id="logo" placeholder="Maximum Salary">
+            </div>
+          </div>
+
+          <h4 class="heading">Deadline Details</h4>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Post Validity</label>
+            <div class="col-md-9">
+              <input type="date" class="form-control" id="validity" placeholder="Post Validity">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Published On</label>
+            <div class="col-md-9">
+              <input type="date" class="form-control" id="logo" placeholder="Company Logo">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Message</label>
+            <div class="col-md-9">
+              <textarea class="form-control" type="text" id="venue" rows="4" cols="50"></textarea>
+              <small id="help" class="form-text text-muted">
+                It will be displayed in all peeljobs social networking sites to reach
+                right candidates.
+                <strong data-toggle="modal" (click)="showModal('sampleFlag')" data-target=#sample
+                  style="cursor: pointer; color:#63C076">View
+                  Sample</strong>
+              </small>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-10 post-btn">
+              <button type="submit" class="btn btn-primary">Post & Preview</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-3">
+      <div class="block m-t">
+        <div class="block-cnt">
+          <p>Connect with social Networking sites to post jobs on your timeline</p>
+          <ul class="list">
+            <li><a href="/recruiter/facebook_login/" target="_blank">
+                <i class="fa fa-facebook"></i><span>Connect with facebook</span> </a></li>
+            <li><a href="/recruiter/twitter_login/" target="_blank">
+                <i class="fa fa-twitter"></i> <span>Connect with twitter</span> </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block" style="margin-top: 55px;">
+        <div class="block-cnt">
+          <strong>Profile Update</strong>
+          <p>Job Seekers will follow your profile to view your latest jobs. Please update with your latest data</p>
+          <a routerLink="/recruiter/profile/" target="_blank">
+            <span class="button">Update Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="block" style="margin-top: 215px;">
+        <div class="block-cnt">
+          <strong>Company Profile</strong>
+          <p>Update your company profile page to get the best job seeker profiles into your dashboard</p>
+          <a routerLink="/recruiter/company-profile/" target="_blank">
+            <span class="button">Update Company Profile</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="row">Connect and post your job on your timeline
+    <span class="btn-fb">
+      <span><i class="fa fa-facebook"></i>facebook</span>
+    </span>
+    <span class="btn-twit">
+      <span><i class="fa fa-twitter"></i> Twitter</span>
+    </span>
+  </div>
+</div>
+
+<div id="title" class="modal" role="dialog" *ngIf="titleFlag">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" (click)="closeModal()">&times;</button>
+        <h3 class="modal-title">INSTRUCTIONS-JOB TITLE</h3>
+      </div>
+      <div class="modal-body">
+        <span class="mylist">
+          <ol type="1">
+            <li>Avoid using Abbreviations eg: Use Assistant manager Instead of Asst.mgnr</li>
+            <li>Job title is the first thing job seekers see when they search for jobs</li>
+          </ol>
+        </span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="keywords" class="modal" role="dialog" *ngIf="keywordsFlag">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" (click)="closeModal()">&times;</button>
+        <h3 class="modal-title">INSTRUCTIONS-KEYWORDS</h3>
+      </div>
+      <div class="modal-body">
+        <span class="mylist">
+          <ol type="1">
+            <li>Enter Keywords like Designation, skills required, special qualifications, certifications, Profissional
+              skills etc</li>
+            <li>Avoid using Abbrevations eg: Use Technical support Executive instead of Tech suppt exec</li>
+          </ol>
+        </span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sample" class="modal" role="dialog" *ngIf="sampleFlag">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" (click)="closeModal()">&times;</button>
+        <h3 class="modal-title">INSTRUCTIONS-MESSAGES</h3>
+      </div>
+      <div class="modal-body">
+        <span id="mylist">
+          <ol type="1">
+            <li>The message will be displayed in all peeljobs social networking sites to reach right candidates.</li>
+            <li>It should represent and enhance the Job Role</li>
+            <li>View Sample below</li>
+          </ol>
+          <div class="socail_image">
+            <img src="https://cdn.peeljobs.com/static/pj_fb_job_profile.png">
+          </div>
+        </span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
