@@ -1,0 +1,105 @@
+<div class="wrap">
+  <div class="recruiterlogin">
+    <div class="">
+      <div class="logincard" *ngIf="loginFlag">
+        <h4>Employer's Login</h4>
+        <form name="loginForm" #loginForm="ngForm">
+          <div class="form-group">
+            <label class="loginform-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="Email" id="email1" name="email" #email1="ngModel"
+              [(ngModel)]="user.email" required
+              pattern="[a-zA-Z0-9!#$% &amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
+            <div class="error-txt" *ngIf="email.touched && email.invalid">Please enter valid email</div>
+            <small id="help" class="form-text text-muted">
+              We'll never share your email with anyone else.
+            </small>
+          </div>
+          <div class="form-group">
+            <label class="loginform-label">Password</label>
+            <input type="password" class="form-control" id="password1" placeholder="Password" name="password"
+              #password1="ngModel" [(ngModel)]="user.password">
+          </div>
+          <div class="customBtn">
+            <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid"
+              (click)="submit('loginForm')">Log In</button>
+            <section class="googleBtn">
+              <span class="icon" data-href="www.myrestos.com"></span>
+              <span style="padding: 0px 8px 0px 8px;">Sign in With Google</span>
+            </section>
+          </div>
+          <p><span class="textbtn" (click)='check(false)'>Forget Password</span></p>
+        </form>
+      </div>
+      <div class="forgetPassword" *ngIf="!loginFlag">
+        <h4>Forgot Password</h4>
+        <form name="mailForm" #mailForm="ngForm">
+          <div class="form-group">
+            <label class="loginform-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="Email" id="email1" name="email" #email1="ngModel"
+              [(ngModel)]="user.email" required
+              pattern="[a-zA-Z0-9!#$% &amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
+            <div class="error-txt" *ngIf="email.touched && email.invalid">Please enter valid email</div>
+            <small id="help" class="form-text text-muted">
+              We'll never share your email with anyone else.
+            </small>
+          </div>
+          <div class="customBtn">
+            <button type="submit" class="btn btn-primary" [disabled]="!mailForm.valid"
+              (click)="submit('mailForm')">Submit</button>
+          </div>
+          <p><span class="textbtn" (click)='check(true)'>Already have an Account?Login here</span></p>
+        </form>
+      </div>
+      <div class="contactus">
+        <h3>Contact Us</h3>
+        <p>Talk to our experts if you have any queries</p>
+        <div class="detail">
+          <span><i class="fa fa-envelope" aria-hidden="true"></i> support@peeljobs.com</span>
+        </div>
+        <div class="detail">
+          <span><i class="fa fa-mobile" aria-hidden="true"></i> 850 009 9499</span>
+        </div>
+      </div>
+    </div>
+    <div class="signupcard">
+      <h4>New Employer Registration</h4>
+      <form name="signupForm" #signupForm="ngForm">
+        <div class="form-group">
+          <label class="signupform-label">User Name</label>
+          <input type="text" class="form-control" id="name" placeholder="User Name" id="name" name="name"
+            #name="ngModel" [(ngModel)]="recruiter.name" required>
+          <div class="error-txt" *ngIf="name.touched">Please enter the User Name</div>
+        </div>
+        <div class="form-group">
+          <label class="signupform-label">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="User Email Address" id="email" name="email"
+            #email="ngModel" [(ngModel)]="recruiter.email" required>
+          <div class="error-txt" *ngIf="name.touched">Please enter the User Email Address</div>
+        </div>
+        <div class="form-group">
+          <label class="signupform-label">Mobile Number</label>
+          <input type="number" class="form-control" id="mobile" placeholder="Mobile Number" id="mobile" name="mobile"
+            #mobile="ngModel" [(ngModel)]="recruiter.mobile" required>
+          <div class="error-txt" *ngIf="mobile.touched">Please enter the User Name</div>
+        </div>
+        <div class="form-group">
+          <label class="signupform-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" id="password" name="password"
+            #password="ngModel" [(ngModel)]="recruiter.password" required>
+          <div class="error-txt" *ngIf="password.touched">Please enter the Password</div>
+        </div>
+        <div class="radiobtn" style="margin-bottom:10px;">
+          <input type="radio" value="recruiter" name="type" #type="ngModel" [(ngModel)]="recruiter.type"
+            checked="recruiter.type">
+          <label class="radiolabel">Recruiter</label>
+          <input type="radio" value="Consultancy" name="type" #type="ngModel" [(ngModel)]="recruiter.type"
+            checked="recruiter.type">
+          <label class="radiolabel">Consultancy</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="!signupForm.valid"
+          (click)="submit('signupForm')">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

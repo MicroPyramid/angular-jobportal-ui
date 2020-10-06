@@ -1,0 +1,108 @@
+.wrap {
+    height: 100vh;
+    width: 100vw;
+}
+
+.recruiterlogin {
+    display: flex;
+    justify-content: space-around; 
+    margin: 10px   
+}
+
+.logincard, .signupcard, .forgetPassword {
+    background: white;
+    padding: 1.5rem;
+    border-width: .2rem;
+    width : 40vw;   
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.loginform-label, .signupform-label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 16px;
+}
+
+.form-control {
+    display: block;
+    width: 90%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn {
+    padding: 10px;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    background-color: #6cc644;
+    color: #fff;
+    padding: 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contactus {
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    background: white;
+    text-align: center
+}
+
+.radiolabel {
+    padding: 0px 5px 5px 5px;
+}
+
+.detail {
+    margin: 10px;
+}
+
+.customBtn {
+    display: flex;
+}
+
+.googleBtn {
+    color: rgba(0,0,0,0.54);
+    border-radius: 5px;
+    border: 2px solid #cdd2d4;
+    box-shadow: none;
+    cursor: pointer;
+    margin: 0px 6px;
+}
+
+.icon {
+    background: url(http://cdn.peeljobs.com/images/google_logo.png) transparent 15px 50% no-repeat;
+    background-size: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+}
+
+.textbtn {
+    float: right;
+    color: blue;
+    cursor: pointer;
+}

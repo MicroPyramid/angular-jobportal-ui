@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <h3>Profile</h3>
+  <div class="profile-details">
+    <div class="row">
+      <div class="profile">
+        <div class="col-md-3">
+          <img [src]="imageUrl" class="img" alt="Profile Img">          
+          <input type="file" class="fileInput" accept="image/*"
+          (change)="onFileChange($event)">          
+        </div>
+        <div class="details col-md-4">
+          <h5>Personal Details</h5>
+          <div class="detail_each">
+            <label>Mobile Number : </label>
+            <span class="value">8466889881</span>
+          </div>
+          <div class="detail_each">
+            <label>First Name : </label>
+            <span class="value">PraveenKumar</span>
+          </div>
+          <div class="detail_each">
+            <label>Last Name : </label>
+            <span class="value">Not Specified</span>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="details col-md-3">
+          <span class="name">PraveenKumar</span>
+          <span class="email">praveen@micropyramid.com</span>
+          <a routerLink="/recruiter/profile-edit" class="btn btn-primary">Edit profile</a>
+          <!-- <button type="button" class="btn btn-primary">Edit profile</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="statistics">
+    <div class="jobs_posted" style="background: #63C076;">
+      <i class="fa fa-graduation-cap"></i>
+      <span class="heading">Jobs Posted</span>
+      <span class="count">0</span>
+    </div>
+    <div class="jobs_posted" style="background: #5C4C8D;">
+      <i class="fa fa-comments"></i>
+      <span class="heading">No of Applicants</span>
+      <span class="count">0</span>
+    </div>
+    <div class="jobs_posted" style="background: #ff9933;">
+      <i class="fa fa-hand-o-up"></i>
+      <span class="heading">Clicks Registered</span>
+      <span class="count">0</span>
+    </div>
+    </div>
+  </div>
+</div>

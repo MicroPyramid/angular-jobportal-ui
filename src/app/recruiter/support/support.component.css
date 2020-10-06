@@ -1,0 +1,124 @@
+.container-fluid {
+    padding-left:30px;
+    padding-top:25px;
+}
+
+span.tab_button {
+    display: inline-block;
+    margin-right:3px;
+    padding: 8px 14px;
+    font-weight: 600;
+    color: white;
+    background-color:#F5A134;
+}
+
+.tab {
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+
+.raise_ticket_button {
+    float: right;
+    margin-right: 0px !important;
+}
+
+.card {
+    min-height: 420px;
+    background: white;
+    padding: 15px;
+    border-top: 1px solid #ADAEB0;
+}
+
+.wrapper {
+    width: 33.3%;
+    padding: 0px 5px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.card_block {
+    border: 1px solid #6d6e71;
+    display: flex;
+}
+.content {
+    float: left;
+    width: 85%;
+    padding: 10px;
+}
+
+.heading {
+    font-size: 15px;
+    color: #63C076;
+    font-weight: 600;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 8px;
+}
+
+.detail_each {
+    padding-top: 8px;
+    display: block;
+}
+
+.detail_each i {
+    color: #d4d4d6;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.name {
+    padding-left: 5px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.actions {
+    float: left;
+    width: 15%;
+}
+
+.action_each {
+    display: block;
+    color: #fff;
+    text-align: center;
+    height: 25%;
+}
+
+.action_each i {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 2px;
+    padding-top: 5px;
+}
+
+.action_each .name {
+    display: block;
+    padding-bottom: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.view {
+    background: #0B86C6;
+}
+
+.edit {
+    background: #F5A134;
+}
+
+.status_close {
+    background: #dc4e41;
+}
+
+.delete {
+    background: #6d6e71;
+}

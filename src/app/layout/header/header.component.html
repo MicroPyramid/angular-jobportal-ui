@@ -1,0 +1,40 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="row">
+    <div class="header">
+      <div class="header_left">
+        <a routerLink="/recruiter/job-list">
+          <img src="https://d2pt99vxm3n8bc.cloudfront.net/logo.png" style="height: 24px;margin-top: -9px">
+          <span style="font-size: 25px">PeelJobs</span></a>
+      </div>
+      <div class="header_right">
+        <ul>
+          <li><a routerLink="/recruiter/job-post" class=""><i class="fa fa-comments"></i>Post A Job</a></li>
+          <li><a routerLink="/recruiter/job-list/">Jobs Posted
+            <span class="count" style= "background: orange">10</span></a></li>
+          <li><a routerLink="/recruiter/job-list/">Active Jobs
+            <span class="count" style= "background: green">10</span></a></li>
+          <li><a routerLink="/recruiter/job/inactive/list/">Inactive Jobs
+            <span class="count" style= "background: red">10</span></a></li>
+          <li><a routerLink="/recruiter/messages/"><i class="fa fa-comments"></i>Messages
+            <span class="count" style= "background: green">10</span></a></li>
+          <li><a routerLink="/recruiter/support"><i class="fa fa-comments"></i>Support</a></li>
+          <div class="dropdown" style="float:right;">
+            <span>PraveenKumar</span>
+            <img src="https://d2pt99vxm3n8bc.cloudfront.net/dummy.jpg" style="width:50px;height:50px;">
+
+            <div class="dropdown-content">
+              <a routerLink="/recruiter/profile">Profile</a>
+              <a routerLink="/recruiter/change-password">Change Password</a>              
+              <a routerLink="#" (click)="auth.logout()">Logout</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="main">
+    <div class="tab">
+      <a routerLink="/recruiter/job-list"><span class="tab_button active">
+          Active Jobs
+        </span></a>
+      <a routerLink="/recruiter/job/inactive-list/"><span class="tab_button ">
+          Inactive Jobs
+        </span></a>
+    </div>
+    <div class="ag-grid">
+      <div class="grid-header">
+        <div class="grid-search">
+          <input type="text" placeholder="Search..." name="searchString" id="searchString" [(ngModel)]="searchString"
+            (ngModelChange)="onsearchStringChanged($event)">
+          <!-- <i class="fa fa-search"></i> -->
+        </div>
+      </div>
+      <div class="grid-body">
+        <ag-grid-angular [rowData]="rowData" class="ag-theme-balham" style="width: 100%; height: 69vh;"
+          [columnDefs]="columnDefs" (firstDataRendered)="onFirstDataRendered($event)" [rowHeight]='37'
+          (gridReady)="onGridReady($event)" (cellClicked)="onCellClicked($event)" [icons]="icons" [pagination]="true"
+          [paginationPageSize]=10>
+        </ag-grid-angular>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+<div class="container-fluid">
+  <div class="">
+    <h3>Company Profile</h3>
+    <div class="card">
+      <div class="edit_button">
+        <a routerLink="/company-profile/edit" style="color:white;">
+          <i class="fa fa-pencil-square" aria-hidden="true"></i> Edit
+          Profile</a>
+      </div>
+      <div class="row">
+        <div class="profile">
+          <div class="col-md-3">
+            <div class="block">
+              <div class="logo">
+                <img [src]="imageUrl">
+                <input type="file" class="fileInput" accept="image/*"
+                  (change)="onFileChange($event)">                  
+              </div>
+              <div class="logobtn">                
+                <button class="btn btn-success" (click)="updatePic()">UPDATE LOGO</button>
+              </div>
+
+              <div class="name">
+                <strong>Company Name :</strong>
+                <span>
+                  <p>Restos Online Services Pvt Ltd</p>
+                </span>
+              </div>
+              <div class="name">
+                <strong>Company Website :</strong>
+                <span>
+                  <p><a href="https://www.restos.in">www.restos.in</a></p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="block">
+              <div class="name">
+                <strong>Company Type :</strong>
+                <span>
+                  <p>Business</p>
+                </span>
+              </div>
+              <div class="name">
+                <strong>Company Level :</strong>
+                <span>
+                  <p>Level 4</p>
+                </span>
+              </div>
+              <div class="name">
+                <strong>Address :</strong>
+                <span>
+                  <address>Restos Online Services Pvt Ltd,Madhapur</address>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="block">
+              <div class="name">
+                <strong>Company Description :</strong>
+                <span>
+                  <p>Restaurant Portal</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h5>MENU FLOW</h5>
+    <div class="menu_block">
+      <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i
+              class="fa fa-times"></i></span></button>
+        <h4>Create &amp; Manage your company menu in Peeljobs</h4>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+html { 
+    background-color: lightgray;
+    width:max-content;
+ }
+
+ .fileInput {
+    cursor: pointer;
+    height: 100%;
+    opacity: 0!important;
+    position: absolute;
+    width: 100%;
+ }
+
+ /*orange #F5A134 */
+ /* blue #337ab7; */
+ /* grayblack #767676; */
+ /* green #63C076; */
+ 
